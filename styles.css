@@ -74,14 +74,38 @@ body {
     text-decoration: none;
     font-weight: bold;
     font-family: var(--font-heading);
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
     padding: 0.5rem 1rem;
     border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
 }
 
 .nav-link:hover {
     color: var(--color-primary-hover);
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: var(--color-primary-light);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 60%;
+}
+
+.nav-link:active {
+    transform: translateY(0);
 }
 
 /* ========================================
