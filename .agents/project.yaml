@@ -1,0 +1,46 @@
+name: portafolio-profesional
+version: 1.0
+project: Portafolio Profesional - Janlier Rojas
+root: .
+description: |
+  Configuración local de agente para el portafolio profesional de Janlier Rojas.
+  Sitio web estático para mostrar proyectos, habilidades y experiencia profesional.
+  Desarrollado con HTML, CSS y JavaScript, con proyectos en Java y C++.
+
+instructions:
+  - Mantener el código limpio y bien estructurado siguiendo buenas prácticas de desarrollo web.
+  - Usar rutas relativas al directorio raíz del proyecto.
+  - Priorizar el diseño responsive y la accesibilidad.
+  - Optimizar para SEO con meta etiquetas apropiadas.
+  - Organizar imágenes y recursos en la carpeta `images/`.
+  - Responder en español cuando el usuario lo solicite.
+  - No eliminar archivos de datos u otros recursos existentes sin permiso.
+  - Todos los cambios realizados por el agente deben ser comiteados inmediatamente usando `.agents/commit_agent.py` con un mensaje descriptivo.
+  - Escribir siempre los mensajes de commit en inglés.
+
+skills:
+  - html
+  - css
+  - javascript
+  - java
+  - cpp
+  - git
+  - github
+  - responsive-design
+  - seo
+  - project-structure
+  - documentation
+
+entrypoints:
+  - index.html
+  - styles.css
+  - README.md
+
+auto_commit_script: .agents/commit_agent.py
+auto_commit_on_change: true
+
+context_files:
+  - index.html
+  - styles.css
+  - images/
+  - README.md
