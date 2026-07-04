@@ -1,116 +1,253 @@
-/* Reset básico */
+/* ========================================
+   VARIABLES CSS - Paleta de colores
+   ======================================== */
+:root {
+    /* Colores principales */
+    --color-primary: #b22222;      /* Rojo oscuro */
+    --color-primary-light: #ff4500;  /* Naranja */
+    --color-primary-hover: #ff7f50;  /* Naranja coral */
+    --color-accent: #ff6347;         /* Rojo tomate */
+    
+    /* Fondos */
+    --color-bg-dark: #1c1c1c;
+    --color-bg-card: #2c2c2c;
+    
+    /* Texto */
+    --color-text-light: #f5f5f5;
+    --color-text-white: #ffffff;
+    
+    /* Sombras */
+    --shadow-primary: rgba(255, 69, 0, 0.4);
+    --shadow-primary-strong: rgba(255, 69, 0, 0.6);
+    
+    /* Tipografía */
+    --font-primary: 'Roboto', sans-serif;
+    --font-heading: 'Orbitron', sans-serif;
+}
+
+/* ========================================
+   RESET Y ESTILOS BASE
+   ======================================== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Perfil con foto */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-primary);
+    background: var(--color-bg-dark);
+    color: var(--color-text-light);
+    line-height: 1.6;
+}
+
+/* ========================================
+   HEADER Y NAVEGACIÓN
+   ======================================== */
+.header {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+    color: var(--color-text-white);
+}
+
+.navbar {
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: var(--color-primary);
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.nav-link {
+    color: var(--color-text-white);
+    text-decoration: none;
+    font-weight: bold;
+    font-family: var(--font-heading);
+    transition: color 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+.nav-link:hover {
+    color: var(--color-primary-hover);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* ========================================
+   PERFIL
+   ======================================== */
 .profile {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
+    padding: 2rem;
+    flex-wrap: wrap;
 }
 
-.profile img {
+.profile-img {
     width: 120px;
     height: 120px;
-    border-radius: 50%; /* hace la imagen circular */
-    object-fit: cover;  /* recorta bien la foto */
-    border: 3px solid #ff4500; /* borde naranja */
-    box-shadow: 0 0 10px rgba(255, 69, 0, 0.6);
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--color-primary-light);
+    box-shadow: 0 0 10px var(--shadow-primary-strong);
+    transition: transform 0.3s ease;
 }
 
-/* Tipografía */
-body {
-    font-family: 'Roboto', sans-serif;
-    background: #1c1c1c;
-    color: #f5f5f5;
+.profile-img:hover {
+    transform: scale(1.05);
 }
 
-/* Menú de navegación */
-nav {
-    background: #b22222; /* rojo oscuro */
-    padding: 1rem;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-}
-
-nav ul li {
-    margin: 0 1rem;
-}
-
-nav ul li a {
-    color: #f5f5f5;
-    text-decoration: none;
-    font-weight: bold;
-    font-family: 'Orbitron', sans-serif;
-    transition: color 0.3s;
-}
-
-nav ul li a:hover {
-    color: #ff7f50; /* naranja coral */
-}
-
-/* Encabezado */
-header {
+.profile-info {
     text-align: center;
-    padding: 2rem;
-    background: linear-gradient(135deg, #b22222, #ff4500);
-    color: white;
 }
 
-header h1 {
+.profile-title {
     font-size: 2.5rem;
-    font-family: 'Orbitron', sans-serif;
+    font-family: var(--font-heading);
+    margin-bottom: 0.5rem;
 }
 
-header p {
+.profile-subtitle {
     font-size: 1.2rem;
-    margin-top: 0.5rem;
 }
 
-/* Contenedor principal con Grid */
-.container {
+/* ========================================
+   CONTENIDO PRINCIPAL
+   ======================================== */
+.main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
     padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
-/* Tarjetas */
+/* ========================================
+   TARJETAS
+   ======================================== */
 .card {
-    background: #2c2c2c;
+    background: var(--color-bg-card);
     padding: 1.5rem;
     border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(255, 69, 0, 0.4);
-    transition: transform 0.3s;
+    box-shadow: 0 2px 6px var(--shadow-primary);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 4px 12px var(--shadow-primary);
 }
 
-.card h2 {
-    color: #ff6347; /* rojo tomate */
+.card-title {
+    color: var(--color-accent);
     margin-bottom: 1rem;
-    font-family: 'Orbitron', sans-serif;
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
 }
 
-/* Footer */
-footer {
+.card-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: var(--color-primary-light);
+}
+
+/* ========================================
+   HABILIDADES
+   ======================================== */
+.skills-list {
+    list-style: none;
+}
+
+.skills-list li {
+    margin-bottom: 0.75rem;
+    padding: 0.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.skills-list li:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* ========================================
+   PROYECTOS
+   ======================================== */
+.projects-placeholder {
     text-align: center;
-    background: #b22222;
-    color: white;
+    color: var(--color-text-light);
+    font-style: italic;
+    opacity: 0.7;
+    padding: 2rem 0;
+}
+
+/* ========================================
+   FOOTER
+   ======================================== */
+.footer {
+    text-align: center;
+    background: var(--color-primary);
+    color: var(--color-text-white);
     padding: 1rem;
     margin-top: 2rem;
-    font-family: 'Orbitron', sans-serif;
+    font-family: var(--font-heading);
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+@media (max-width: 768px) {
+    .profile-title {
+        font-size: 1.8rem;
+    }
+    
+    .profile-subtitle {
+        font-size: 1rem;
+    }
+    
+    .profile-img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .main {
+        padding: 1rem;
+        gap: 1.5rem;
+    }
+    
+    .card {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
 }
