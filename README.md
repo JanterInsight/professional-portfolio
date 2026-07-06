@@ -4,7 +4,7 @@ Junior Developer specialized in Java, web technologies and artificial intelligen
 
 ## Technologies
 
-- **Languages**: Java, C++, JavaScript, HTML/CSS
+- **Languages**: Java, C++, JavaScript, HTML/CSS, Python
 - **Frameworks**: Swing, JavaFX, Maven
 - **Tools**: Git, GitHub, VS Code, IntelliJ
 - **Databases**: SQL (SQLite)
