@@ -522,6 +522,18 @@ body {
     box-shadow: 0 0 15px var(--shadow-neon);
 }
 
+.contact-icon-img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+    transition: filter 0.3s ease;
+}
+
+.contact-item:hover .contact-icon-img {
+    filter: brightness(0) saturate(100%) hue-rotate(120deg);
+}
+
 .contact-icon {
     font-size: 1.5rem;
 }
