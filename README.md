@@ -1,33 +1,29 @@
-# Portafolio Profesional - Janlier Rojas
+# Professional Portfolio - Janlier Rojas
 
-Desarrollador Junior especializado en Java, tecnologías web e inteligencia artificial.
+Junior Developer specialized in Java, web technologies and artificial intelligence.
 
-## Tecnologías
+## Technologies
 
-- **Lenguajes**: Java, C++, JavaScript, HTML/CSS
+- **Languages**: Java, C++, JavaScript, HTML/CSS
 - **Frameworks**: Swing, JavaFX, Maven
-- **Herramientas**: Git, GitHub, VS Code, IntelliJ
-- **Bases de datos**: SQL (SQLite)
+- **Tools**: Git, GitHub, VS Code, IntelliJ
+- **Databases**: SQL (SQLite)
 
-## Proyectos
+## Projects
 
-- **NexusAI** - Asistente de inteligencia artificial para productividad
+- **NexusAI** - AI assistant for productivity
 
-## Contacto
+## Contact
 
 - Email: janterinsight@gmail.com
 - GitHub: [JanterInsight](https://github.com/JanterInsight)
 - Instagram: [@janlierrojas](https://www.instagram.com/janlierrojas)
 
-## Desarrollo
+## Development
 
 ```bash
-# Clonar repositorio
+# Clone repository
 git clone https://github.com/JanterInsight/PortafolioProfesional.git
 
-# Abrir en navegador
+# Open in browser
 index.html
-```
-
----
-*Portafolio con diseño cyberpunk - Hecho con Java y pasión*
