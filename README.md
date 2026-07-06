@@ -15,15 +15,15 @@ Desarrollador Junior especializado en Java, tecnologías web e inteligencia arti
 
 ## Contacto
 
-- Email: janlierrojas@gmail.com
-- GitHub: [JanterCaza](https://github.com/JanterCaza)
+- Email: janterinsight@gmail.com
+- GitHub: [JanterInsight](https://github.com/JanterInsight)
 - Instagram: [@janlierrojas](https://www.instagram.com/janlierrojas)
 
 ## Desarrollo
 
 ```bash
 # Clonar repositorio
-git clone https://github.com/JanterCaza/PortafolioProfesional.git
+git clone https://github.com/JanterInsight/PortafolioProfesional.git
 
 # Abrir en navegador
 index.html

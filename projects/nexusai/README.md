@@ -35,7 +35,7 @@ index.html
 
 ## Demo
 
-Visita la [página de demo](https://jantercaza.github.io/PortafolioProfesional/projects/nexusai/) para ver el proyecto en funcionamiento.
+Visita la [página de demo](https://janterinsight.github.io/PortafolioProfesional/projects/nexusai/) para ver el proyecto en funcionamiento.
 
 ---
 *Proyecto ficticio creado para portafolio profesional*
