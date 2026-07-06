@@ -8,9 +8,35 @@ Permitir que el asistente (o cualquier agente configurado para este repositorio)
 
 ## Archivos
 
-- `project.yaml`: configuración principal del agente.
+- `project.yaml`: configuración principal del agente con guía de uso de skills.
 - `commit_agent.py`: helper para commits automáticos.
 - `auto_commit.ps1` / `auto_commit.sh`: wrappers para ejecutar el helper en Windows / Unix.
+
+## Skills Disponibles
+
+Las skills están en `.agents/skills/`. Cada skill tiene un archivo `SKILL.md` con su descripción y cuándo usarla.
+
+### Skills principales para este proyecto:
+
+| Skill | Cuándo usar |
+|-------|-------------|
+| `auto-commit` | SIEMPRE después de modificar archivos del portafolio |
+| `frontend-design` | Construir interfaces web, componentes, páginas |
+| `amplify-workflow` | Trabajar con AWS Amplify, Cognito, AppSync |
+| `convex-design` | Backend reactivo con Convex |
+| `firestore-data` | Operaciones CRUD en Firestore |
+| `gcp-to-aws` | Migrar workloads de GCP a AWS |
+| `use-railway` | Operar infraestructura Railway |
+| `searching-sourcegraph` | Buscar y navegar código |
+| `teamcity-cli` | Trabajar con TeamCity CI/CD |
+| `sentry-cli` | Monitoreo de errores con Sentry |
+| `building-pydantic-ai-agents` | Construir agentes AI con Pydantic |
+| `data-analyst` | Análisis de datos con ClickHouse |
+| `mintlify` | Crear documentación con Mintlify |
+| `playground` | Crear playgrounds HTML interactivos |
+| `skill-creator` | Crear o optimizar skills |
+
+Ver `project.yaml` para la guía completa de triggers y cuándo usar cada skill.
 
 ## Uso
 
