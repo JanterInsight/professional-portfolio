@@ -530,8 +530,17 @@ body {
     transition: all 0.3s ease;
 }
 
+.contact-icon-github {
+    filter: none;
+}
+
 .contact-item:hover .contact-icon-img {
     filter: brightness(0) invert(1) drop-shadow(0 0 5px var(--color-primary));
+    transform: scale(1.1);
+}
+
+.contact-item:hover .contact-icon-github {
+    filter: drop-shadow(0 0 5px var(--color-primary));
     transform: scale(1.1);
 }
 
