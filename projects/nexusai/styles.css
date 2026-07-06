@@ -436,6 +436,108 @@ body {
     }
 }
 
+/* ========================================
+   CHATBOT
+   ======================================== */
+.chatbot-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 2000;
+    align-items: center;
+    justify-content: center;
+}
+
+.chatbot-modal.active {
+    display: flex;
+}
+
+.chatbot-container {
+    background: var(--color-bg-card);
+    width: 90%;
+    max-width: 400px;
+    height: 500px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid var(--color-primary);
+}
+
+.chatbot-header {
+    background: var(--color-primary);
+    color: var(--color-bg-dark);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-heading);
+}
+
+.chatbot-close {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--color-bg-dark);
+}
+
+.chatbot-messages {
+    flex: 1;
+    padding: 1rem;
+    overflow-y: auto;
+}
+
+.message {
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    border-radius: 8px;
+    max-width: 80%;
+}
+
+.bot-message {
+    background: var(--color-primary);
+    color: var(--color-bg-dark);
+    align-self: flex-start;
+}
+
+.user-message {
+    background: var(--color-bg-dark-section);
+    color: var(--color-text-white);
+    align-self: flex-end;
+    margin-left: auto;
+}
+
+.chatbot-input {
+    display: flex;
+    padding: 1rem;
+    gap: 0.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.chatbot-input input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    background: var(--color-bg-dark);
+    color: var(--color-text-white);
+}
+
+.chatbot-input button {
+    background: var(--color-primary);
+    color: var(--color-bg-dark);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
 /* Móviles muy pequeños */
 @media (max-width: 320px) {
     .hero {

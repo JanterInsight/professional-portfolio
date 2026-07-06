@@ -16,6 +16,25 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Chatbot Modal -->
+    <div id="chatbot-modal" class="chatbot-modal">
+        <div class="chatbot-container">
+            <div class="chatbot-header">
+                <h3>NexusAI Chatbot</h3>
+                <button id="close-chatbot" class="chatbot-close">&times;</button>
+            </div>
+            <div class="chatbot-messages" id="chatbot-messages">
+                <div class="message bot-message">
+                    ¡Hola! Soy NexusAI, tu asistente de productividad. ¿En qué puedo ayudarte hoy?
+                </div>
+            </div>
+            <div class="chatbot-input">
+                <input type="text" id="chatbot-input" placeholder="Escribe tu mensaje..." autocomplete="off">
+                <button id="send-message">Enviar</button>
+            </div>
+        </div>
+    </div>
+    
     <!-- Header -->
     <header class="header">
         <nav class="navbar">
@@ -26,7 +45,7 @@
                 <li><a href="#features" class="nav-link">Características</a></li>
                 <li><a href="#testimonials" class="nav-link">Testimonios</a></li>
                 <li><a href="#pricing" class="nav-link">Precios</a></li>
-                <li><a href="../index.html" class="nav-link nav-link-back">← Portafolio</a></li>
+<li><a href="../../index.html" class="nav-link nav-link-back">← Portafolio</a></li>
             </ul>
         </nav>
         
@@ -145,5 +164,6 @@
     <footer class="footer">
         <p>&copy; 2026 NexusAI - Proyecto ficticio para portafolio</p>
     </footer>
+    
+    <script src="scripts.js"></script>
 </body>
-</html>
