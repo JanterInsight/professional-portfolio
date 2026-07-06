@@ -39,6 +39,99 @@ entrypoints:
 auto_commit_script: .agents/commit_agent.py
 auto_commit_on_change: true
 
+# Guía de uso de skills
+# Cada skill tiene un propósito específico. Usar la skill apropiada según el contexto.
+skill_usage_guide:
+  # Desarrollo web frontend
+  frontend-design:
+    when_to_use: "Construir interfaces web, componentes, páginas o aplicaciones con diseño creativo y de alta calidad"
+    triggers: ["diseñar", "crear interfaz", "frontend", "componente", "página web", "aplicación web"]
+  
+  # Auto-commit (SIEMPRE después de cambios)
+  auto-commit:
+    when_to_use: "SIEMPRE después de modificar archivos del portafolio - automatiza commits git"
+    triggers: ["modificar", "cambio", "actualizar", "editar", "guardar", "commit", "git"]
+  
+  # Desarrollo backend y bases de datos
+  amplify-workflow:
+    when_to_use: "Trabajar con AWS Amplify Gen2, autenticación Cognito, APIs GraphQL/AppSync"
+    triggers: ["amplify", "cognito", "appsync", "graphql", "aws backend"]
+  
+  convex-design:
+    when_to_use: "Diseñar backend reactivo con Convex, esquemas, queries, mutations"
+    triggers: ["convex", "backend reactivo", "realtime database"]
+  
+  firestore-data:
+    when_to_use: "Operaciones CRUD y jerarquía de colecciones en Firestore"
+    triggers: ["firestore", "nosql", "colección", "documento"]
+  
+  # Bases de datos específicas
+  cosmosdb-best-practices:
+    when_to_use: "Optimización y mejores prácticas para Azure Cosmos DB"
+    triggers: ["cosmosdb", "azure cosmos", "particionamiento", "rendimiento"]
+  
+  oracledb:
+    when_to_use: "Gestión y monitoreo de bases de datos Oracle"
+    triggers: ["oracle", "plsql", "tabla", "query oracle"]
+  
+  spanner-data:
+    when_to_use: "Exploración de esquema y consultas en Google Cloud Spanner"
+    triggers: ["spanner", "google cloud sql", "bigtable"]
+  
+  # Cloud y migración
+  gcp-to-aws:
+    when_to_use: "Migrar workloads de Google Cloud Platform a AWS"
+    triggers: ["migrar gcp", "gcp a aws", "migrar a aws", "cloud run a eks"]
+  
+  use-railway:
+    when_to_use: "Operar infraestructura Railway, despliegues, servicios, bases de datos"
+    triggers: ["railway", "desplegar", "infraestructura", "railway up"]
+  
+  # Herramientas de desarrollo
+  searching-sourcegraph:
+    when_to_use: "Buscar y navegar código con Sourcegraph"
+    triggers: ["sourcegraph", "buscar código", "navegar repositorio"]
+  
+  teamcity-cli:
+    when_to_use: "Trabajar con TeamCity CI/CD, builds, logs, jobs"
+    triggers: ["teamcity", "build", "ci/cd", "pipeline"]
+  
+  sentry-cli:
+    when_to_use: "Interacción con Sentry para monitoreo de errores"
+    triggers: ["sentry", "error tracking", "monitoreo", "issue tracking"]
+  
+  # AI y agentes
+  building-pydantic-ai-agents:
+    when_to_use: "Construir agentes AI con Pydantic AI, tools, streaming"
+    triggers: ["pydantic ai", "agente ai", "agente inteligente", "tool calling"]
+  
+  dr-bedrock:
+    when_to_use: "Solucionar problemas de autenticación AWS Bedrock"
+    triggers: ["bedrock", "aws bedrock", "modelo ia", "anthropic", "llama"]
+  
+  # Análisis y datos
+  data-analyst:
+    when_to_use: "Análisis de datos con ClickHouse, métricas, dashboards"
+    triggers: ["clickhouse", "analítica", "métricas", "dashboard", "kpi"]
+  
+  vibe-prospecting:
+    when_to_use: "Búsqueda de datos de empresas y contactos profesionales"
+    triggers: ["prospecting", "lead", "contacto", "empresa", "búsqueda"]
+  
+  # Documentación
+  mintlify:
+    when_to_use: "Crear sitios de documentación con Mintlify"
+    triggers: ["mintlify", "documentación", "api docs", "guía"]
+  
+  # Utilidades
+  playground:
+    when_to_use: "Crear playgrounds HTML interactivos y exploradores visuales"
+    triggers: ["playground", "interactivo", "explorador", "herramienta visual"]
+  
+  skill-creator:
+    when_to_use: "Crear, modificar o optimizar skills existentes"
+    triggers: ["crear skill", "nueva skill", "optimizar skill"]
+
 context_files:
   - index.html
   - styles.css
