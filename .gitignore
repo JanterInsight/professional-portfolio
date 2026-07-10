@@ -1,6 +1,9 @@
 # Agent configuration - not for version control
 .agents/
 
+# Projects - separate repository
+projects/
+
 # OS files
 .DS_Store
 Thumbs.db
