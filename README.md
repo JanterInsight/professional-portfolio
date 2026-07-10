@@ -23,7 +23,7 @@ Junior Developer specialized in Java, web technologies and artificial intelligen
 
 ```bash
 # Clone repository
-git clone https://github.com/JanterInsight/PortafolioProfesional.git
+git clone https://github.com/JanterInsight/professional-portfolio.git
 
 # Open in browser
 index.html
