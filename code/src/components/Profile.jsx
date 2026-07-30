@@ -24,7 +24,7 @@ export default function Profile() {
   return (
     <div className="profile">
       <div className="profile-glow"></div>
-      <img src="/images/Smoking.png" alt="Profile picture of Janlier Rojas" className="profile-img" />
+      <img src={`${import.meta.env.BASE_URL}images/Smoking.png`} alt="Profile picture of Janlier Rojas" className="profile-img" />
       <div className="profile-info">
         <h1 className="profile-title" ref={titleRef}>Janlier Rojas Santana</h1>
         <p className="profile-subtitle">Junior Developer • Java & Web • AI Enthusiast</p>
