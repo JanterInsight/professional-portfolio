@@ -15,10 +15,10 @@ Thumbs.db
 *.swo
 
 # Dependencies
-code\node_modules/
+code/node_modules/
 
 # Build output
-dist/
+code\dist/
 
 # Temporary files
 *.tmp

@@ -23,6 +23,9 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
       - name: Install dependencies
         run: |
           cd code
@@ -32,9 +35,6 @@ jobs:
         run: |
           cd code
           npm run build
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
