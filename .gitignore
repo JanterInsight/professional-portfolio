@@ -17,3 +17,8 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.log
+
+# Documentation files (do not commit)
+changes.md
+pure-music-lovers-web-README.md
+the-courtyard-of-delights-README.md
