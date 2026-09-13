@@ -1,0 +1,21 @@
+/* ========================================
+   ESTUDIOS - TIMELINE
+   ======================================== */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.timeline-item h3 {
+  color: var(--color-primary);
+  margin-bottom: 0.25rem;
+  font-family: var(--font-mono);
+}
+
+.timeline-period {
+  color: var(--color-accent);
+  font-size: 0.85rem;
+  font-family: var(--font-mono);
+  margin-bottom: 0.5rem;
+}

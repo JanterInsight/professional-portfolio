@@ -1,0 +1,12 @@
+/* ========================================
+   FOOTER
+   ======================================== */
+.footer {
+  text-align: center;
+  background: linear-gradient(135deg, #0a0a0a, #151515);
+  color: var(--color-text-white);
+  padding: 2rem;
+  margin-top: 3rem;
+  border-top: 1px solid var(--color-primary);
+  font-family: var(--font-mono);
+}

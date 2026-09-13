@@ -1,5 +1,7 @@
 import { useState } from 'react'
+import './Navbar.css'
 
+/** Barra de navegación fija con menú desplegable en dispositivos móviles. */
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
@@ -15,11 +17,11 @@ export default function Navbar() {
     <nav className="navbar" aria-label="Main navigation">
       <div className="nav-container">
         <a href="#" className="nav-brand">Professional Portfolio</a>
-        
-        <button 
-          className={`hamburger ${isOpen ? 'active' : ''}`} 
-          id="hamburger" 
-          aria-label="Toggle navigation menu" 
+
+        <button
+          className={`hamburger ${isOpen ? 'active' : ''}`}
+          id="hamburger"
+          aria-label="Toggle navigation menu"
           aria-expanded={isOpen}
           onClick={toggleMenu}
         >
@@ -27,7 +29,7 @@ export default function Navbar() {
           <span className="hamburger-line"></span>
           <span className="hamburger-line"></span>
         </button>
-        
+
         <ul className={`nav-list ${isOpen ? 'active' : ''}`} id="navList">
           <li><a href="#about" className="nav-link" onClick={closeMenu}>About Me</a></li>
           <li><a href="#studies" className="nav-link" onClick={closeMenu}>Education</a></li>

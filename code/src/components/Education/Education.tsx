@@ -1,3 +1,6 @@
+import './Education.css'
+
+/** Sección de formación académica con una línea de tiempo. */
 export default function Education() {
   return (
     <section id="studies" className="card reveal">

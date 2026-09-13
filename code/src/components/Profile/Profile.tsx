@@ -1,30 +1,18 @@
-import { useEffect, useRef } from 'react'
+import { useRef } from 'react'
+import useTypewriter from '../../hooks/useTypewriter'
+import { imageUrl } from '../../utils/assets'
+import './Profile.css'
 
+/** Cabecera de perfil con imagen, título animado, subtítulo y etiquetas. */
 export default function Profile() {
-  const titleRef = useRef(null)
+  const titleRef = useRef<HTMLHeadingElement>(null)
 
-  useEffect(() => {
-    const title = titleRef.current
-    if (!title) return
-
-    const text = title.textContent
-    title.textContent = ''
-    let i = 0
-
-    function type() {
-      if (i < text.length) {
-        title.textContent += text.charAt(i)
-        i++
-        setTimeout(type, 100)
-      }
-    }
-    type()
-  }, [])
+  useTypewriter(titleRef)
 
   return (
     <div className="profile">
       <div className="profile-glow"></div>
-      <img src={`${import.meta.env.BASE_URL}images/Smoking.png`} alt="Profile picture of Janlier Rojas" className="profile-img" />
+      <img src={imageUrl('Smoking.png')} alt="Profile picture of Janlier Rojas" className="profile-img" />
       <div className="profile-info">
         <h1 className="profile-title" ref={titleRef}>Janlier Rojas Santana</h1>
         <p className="profile-subtitle">Junior Developer • Java & Web • AI Enthusiast</p>
