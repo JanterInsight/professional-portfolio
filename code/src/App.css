@@ -522,6 +522,13 @@ section[id] {
     text-align: center;
 }
 
+.project-icon-img {
+    display: block;
+    margin: 0 auto;
+    width: 32px;
+    height: 32px;
+}
+
 .project-card h3 {
     color: var(--color-primary);
     margin-bottom: 0.5rem;
