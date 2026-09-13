@@ -9,11 +9,11 @@ export default function Projects() {
           <div className="project-icon">
             <img
               className="project-icon-img"
-              src={icon('Pure-Music-Lovers-Web-Icon-Main-Full-32x32.png')}
-              srcSet={`${icon('Pure-Music-Lovers-Web-Icon-Main-Full-32x32.png')} 1x, ${icon('Pure-Music-Lovers-Web-Icon-Main-Full-64x64.png')} 2x`}
+              src={icon('Pure-Music-Lovers-Web-Icon-Main-Full-64x64.png')}
+              srcSet={`${icon('Pure-Music-Lovers-Web-Icon-Main-Full-64x64.png')} 1x, ${icon('Pure-Music-Lovers-Web-Icon-Main-Full-64x64.png')} 2x`}
               alt="Pure Music Lovers Web icon"
-              width="32"
-              height="32"
+              width="64"
+              height="64"
               loading="lazy"
             />
           </div>
@@ -27,11 +27,11 @@ export default function Projects() {
           <div className="project-icon">
             <img
               className="project-icon-img"
-              src={icon('The-Courtyard-Of-Delights-Icon-Main-Full-32x32.png')}
-              srcSet={`${icon('The-Courtyard-Of-Delights-Icon-Main-Full-32x32.png')} 1x, ${icon('The-Courtyard-Of-Delights-Icon-Main-Full-64x64.png')} 2x`}
+              src={icon('The-Courtyard-Of-Delights-Icon-Main-Full-64x64.png')}
+              srcSet={`${icon('The-Courtyard-Of-Delights-Icon-Main-Full-64x64.png')} 1x, ${icon('The-Courtyard-Of-Delights-Icon-Main-Full-64x64.png')} 2x`}
               alt="The Courtyard of Delights icon"
-              width="32"
-              height="32"
+              width="64"
+              height="64"
               loading="lazy"
             />
           </div>
