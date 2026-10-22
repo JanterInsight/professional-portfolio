@@ -1,10 +1,10 @@
-import './BackToTop.css'
+﻿import './BackToTop.css'
 
 interface BackToTopProps {
   visible: boolean
 }
 
-/** Botón flotante para volver al inicio; visible cuando se hace scroll. */
+/** Floating button that scrolls back to the top; visible while scrolling. */
 export default function BackToTop({ visible }: BackToTopProps) {
   const scrollToTop = () => {
     window.scrollTo({

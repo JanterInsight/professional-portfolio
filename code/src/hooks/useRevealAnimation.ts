@@ -1,9 +1,9 @@
 import { useEffect } from 'react'
 
 /**
- * Observa todos los elementos con clase `.reveal` del documento y les
- * añade la clase `active` cuando entran en el viewport, activando así
- * la animación de revelado al hacer scroll.
+ * Observes every element with the `.reveal` class in the document and
+ * adds the `active` class when it enters the viewport, triggering the
+ * reveal-on-scroll animation. Runs once when the app mounts.
  */
 export default function useRevealAnimation(): void {
   useEffect(() => {
@@ -23,8 +23,6 @@ export default function useRevealAnimation(): void {
     const revealElements = document.querySelectorAll<Element>('.reveal')
     revealElements.forEach(el => observer.observe(el))
 
-    return () => {
-      revealElements.forEach(el => observer.unobserve(el))
-    }
+    return () => observer.disconnect()
   }, [])
 }

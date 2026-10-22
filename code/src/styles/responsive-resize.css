@@ -1,10 +1,10 @@
 /* ========================================
    RESPONSIVE DESIGN
    ======================================== */
-/* Todos los breakpoints del sitio centralizados aquí para facilitar
-   su ajuste sin tocar el CSS de cada componente. */
+/* All breakpoints are centralized here so they can be tuned without
+   touching each component''s CSS. */
 
-/* Tablets y dispositivos medianos */
+/* Tablets and medium devices */
 @media (max-width: 1024px) {
   .profile-title {
     font-size: 2.5rem;
@@ -20,7 +20,7 @@
   }
 }
 
-/* Móviles grandes y tablets pequeñas */
+/* Large phones and small tablets */
 @media (max-width: 768px) {
   .profile-title {
     font-size: 2rem;
@@ -81,7 +81,7 @@
   }
 }
 
-/* Móviles pequeños */
+/* Small phones */
 @media (max-width: 480px) {
   .profile {
     flex-direction: column;
@@ -121,7 +121,7 @@
   }
 }
 
-/* Móviles muy pequeños */
+/* Very small phones */
 @media (max-width: 320px) {
   .profile-title {
     font-size: 1.5rem;
@@ -138,5 +138,27 @@
 
   .card {
     padding: 0.85rem;
+  }
+}
+
+/* Users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal,
+  .reveal.active {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .particle {
+    animation: none;
+  }
+
+  .profile-glow {
+    animation: none;
   }
 }

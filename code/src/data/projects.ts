@@ -2,17 +2,17 @@ export interface Project {
   title: string
   tech: string
   description: string
-  /** Nombre del archivo de icono dentro de `public/icons`. */
+  /** Icon file name inside `public/icons`. */
   icon?: string
-  /** Emoji alternativo al icono (para proyectos sin imagen). */
+  /** Emoji alternative to the icon (for projects without an image). */
   emoji?: string
-  /** URL del proyecto publicado. */
+  /** URL of the published project. */
   link?: string
-  /** Si es `true`, el proyecto aún no está disponible. */
+  /** When `true`, the project is not available yet. */
   disabled?: boolean
 }
 
-/** Proyectos mostrados en la sección de Projects. */
+/** Projects shown in the Projects section. */
 export const projects: Project[] = [
   {
     title: 'Pure Music Lovers Web',

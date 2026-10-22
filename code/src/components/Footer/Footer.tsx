@@ -1,6 +1,6 @@
-import './Footer.css'
+﻿import './Footer.css'
 
-/** Pie de página con copyright. */
+/** Page footer with copyright. */
 export default function Footer() {
   return (
     <footer className="footer">

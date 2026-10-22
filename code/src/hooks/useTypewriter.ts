@@ -1,28 +1,36 @@
-import { useEffect, type RefObject } from 'react'
+import { useLayoutEffect, type RefObject } from 'react'
 
 /**
- * Aplica un efecto "máquina de escribir" sobre el contenido de texto del
- * elemento referenciado. Se ejecuta una única vez al montar el componente.
+ * Applies a "typewriter" effect to the text content of the referenced
+ * element. It runs a single time when the component mounts and clears
+ * any pending timeout when the component unmounts.
  */
 export default function useTypewriter<T extends HTMLElement>(
   targetRef: RefObject<T | null>
 ): void {
-  useEffect(() => {
+  useLayoutEffect(() => {
     const el = targetRef.current
-    if (el) {
-      const title: HTMLElement = el
-      const text = title.textContent ?? ''
-      title.textContent = ''
-      let i = 0
+    if (!el) return
 
-      function type(): void {
-        if (i < text.length) {
-          title.textContent = (title.textContent ?? '') + text.charAt(i)
-          i++
-          setTimeout(type, 100)
-        }
+    const title: HTMLElement = el
+    const text = title.textContent ?? ''
+    title.textContent = ''
+    let i = 0
+    let timeout: number | undefined
+
+    function type(): void {
+      if (i < text.length) {
+        title.textContent = (title.textContent ?? '') + text.charAt(i)
+        i++
+        timeout = setTimeout(type, 100)
       }
-      type()
+    }
+    type()
+
+    return () => {
+      if (timeout !== undefined) {
+        clearTimeout(timeout)
+      }
     }
   }, [])
 }

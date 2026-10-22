@@ -1,7 +1,7 @@
-import { iconUrl } from '../../utils/assets'
+﻿import { iconUrl } from '../../utils/assets'
 import './Contact.css'
 
-/** Sección de contacto con enlaces a email, redes y mensajería. */
+/** Contact section with e-mail, social and messaging links. */
 export default function Contact() {
   return (
     <section id="contact" className="card reveal">

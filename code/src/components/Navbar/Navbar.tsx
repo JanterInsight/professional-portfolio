@@ -1,7 +1,7 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import './Navbar.css'
 
-/** Barra de navegación fija con menú desplegable en dispositivos móviles. */
+/** Fixed navigation bar with a mobile slide-in menu. */
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
@@ -23,6 +23,7 @@ export default function Navbar() {
           id="hamburger"
           aria-label="Toggle navigation menu"
           aria-expanded={isOpen}
+          aria-controls="navList"
           onClick={toggleMenu}
         >
           <span className="hamburger-line"></span>

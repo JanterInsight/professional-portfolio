@@ -1,10 +1,7 @@
-import { useEffect } from 'react'
+﻿import { useEffect } from 'react'
 import './ParticleBackground.css'
 
-/**
- * Fondo animado de partículas generado dinámicamente sobre el contenedor
- * `#particles`. Las partículas se crean al montar y se limpian al desmontar.
- */
+/** Animated particle background generated on the `#particles` container. */
 export default function ParticleBackground() {
   useEffect(() => {
     const container = document.getElementById('particles')

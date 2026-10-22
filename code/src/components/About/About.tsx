@@ -1,6 +1,6 @@
-import './About.css'
+﻿import './About.css'
 
-/** Sección "Acerca de mí". Reutiliza los estilos compartidos `.card`. */
+/** "About Me" section. Reuses the shared `.card` styles. */
 export default function About() {
   return (
     <section id="about" className="card reveal">

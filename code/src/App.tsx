@@ -1,4 +1,4 @@
-import ParticleBackground from './components/ParticleBackground/ParticleBackground'
+﻿import ParticleBackground from './components/ParticleBackground/ParticleBackground'
 import Navbar from './components/Navbar/Navbar'
 import Profile from './components/Profile/Profile'
 import About from './components/About/About'
@@ -11,7 +11,7 @@ import BackToTop from './components/BackToTop/BackToTop'
 import useScrollPosition from './hooks/useScrollPosition'
 import useRevealAnimation from './hooks/useRevealAnimation'
 
-/** Componente raíz que compone todas las secciones del portafolio. */
+/** Root component that composes every section of the portfolio. */
 function App() {
   const scrollY = useScrollPosition()
   useRevealAnimation()

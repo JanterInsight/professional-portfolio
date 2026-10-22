@@ -1,8 +1,8 @@
-import type { CSSProperties } from 'react'
+﻿import type { CSSProperties } from 'react'
 import { skillCategories } from '../../data/skills'
 import './Skills.css'
 
-/** Sección de habilidades, renderizada a partir de `data/skills`. */
+/** Skills section, rendered from `data/skills`. */
 export default function Skills() {
   return (
     <section id="skills" className="card reveal">

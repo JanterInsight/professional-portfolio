@@ -1,10 +1,11 @@
-# Professional Portfolio - Janlier Rojas Santana
+﻿# Professional Portfolio - Janlier Rojas Santana
 
 Junior Developer specialized in Java, web technologies and artificial intelligence.
 
 ## 🚀 Technologies
 
-- **Languages**: Java, C++, JavaScript, HTML/CSS, Python
+- **Frontend**: React 18, TypeScript, Vite 6
+- **Languages**: Java, C++, TypeScript, HTML/CSS, Python
 - **Frameworks**: Swing, JavaFX, Maven, React
 - **Tools**: Git, GitHub, VS Code, IntelliJ
 - **Databases**: SQL (SQLite)
@@ -15,14 +16,31 @@ Junior Developer specialized in Java, web technologies and artificial intelligen
 - **The Courtyard of Delights** - Artisanal ice cream shop landing page (React)
 - **NexusAI** - AI assistant for productivity (In development)
 
-## 📞 Contact
+## 🗂️ Project structure
 
-- Email: janterinsight@gmail.com
-- Phone: +53 51561931
-- WhatsApp: +53 51561931
-- GitHub: [JanterInsight](https://github.com/JanterInsight)
-- Instagram: [@janlierrojas](https://www.instagram.com/janlierrojas)
-- LinkedIn: [janlier-rojas-4b36b2430](https://www.linkedin.com/in/janlier-rojas-4b36b2430)
+The application lives inside [`code/`](code) and follows a feature-based layout:
+
+```text
+code/
+├── index.html            # HTML entry point
+├── package.json          # Dependencies and scripts
+├── tsconfig.json         # TypeScript strict configuration
+├── vite.config.js        # Vite configuration
+├── public/
+│   ├── icons/            # Social, contact and project icons
+│   └── images/           # Static images
+└── src/
+    ├── main.tsx          # App entry point
+    ├── App.tsx           # Root component
+    ├── components/       # One folder per component (TSX + CSS)
+    │   ├── Navbar/
+    │   ├── Profile/
+    │   └── ...
+    ├── hooks/            # Custom hooks (scroll, reveal, typewriter)
+    ├── styles/           # Global and responsive styles
+    ├── data/             # Typed content data
+    └── utils/            # Shared helpers
+```
 
 ## 🛠️ Development
 
@@ -36,6 +54,9 @@ npm install
 
 # Run development server
 npm run dev
+
+# Type-check the TypeScript code
+npm run typecheck
 
 # Build for production
 npm run build

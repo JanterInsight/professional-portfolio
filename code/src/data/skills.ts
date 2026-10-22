@@ -1,16 +1,16 @@
-/** Una habilidad con su nivel expresado en porcentaje (pe. `'80%'`). */
+/** A skill with its level expressed as a percentage (e.g. `'80%'`). */
 export interface Skill {
   name: string
   level: string
 }
 
-/** Una categoría de habilidades con un título y su listado. */
+/** A skills category with a heading and its list of skills. */
 export interface SkillCategory {
   title: string
   skills: Skill[]
 }
 
-/** Habilidades mostradas en la sección de Skills. */
+/** Skills shown in the Skills section. */
 export const skillCategories: SkillCategory[] = [
   {
     title: 'Languages',

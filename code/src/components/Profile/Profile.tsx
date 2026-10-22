@@ -1,9 +1,9 @@
-import { useRef } from 'react'
+﻿import { useRef } from 'react'
 import useTypewriter from '../../hooks/useTypewriter'
 import { imageUrl } from '../../utils/assets'
 import './Profile.css'
 
-/** Cabecera de perfil con imagen, título animado, subtítulo y etiquetas. */
+/** Profile hero with picture, animated title, subtitle and tags. */
 export default function Profile() {
   const titleRef = useRef<HTMLHeadingElement>(null)
 

@@ -1,8 +1,8 @@
-import { projects } from '../../data/projects'
+﻿import { projects } from '../../data/projects'
 import { iconUrl } from '../../utils/assets'
 import './Projects.css'
 
-/** Sección de proyectos, renderizada a partir de `data/projects`. */
+/** Projects section, rendered from `data/projects`. */
 export default function Projects() {
   return (
     <section id="projects" className="card reveal">
