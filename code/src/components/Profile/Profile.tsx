@@ -7,7 +7,7 @@ import './Profile.css'
 export default function Profile() {
   const titleRef = useRef<HTMLHeadingElement>(null)
 
-  useTypewriter(titleRef)
+  useTypewriter(titleRef, 'Janlier Rojas Santana')
 
   return (
     <div className="profile">
