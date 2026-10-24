@@ -1,18 +1,48 @@
 ﻿# Professional Portfolio - Janlier Rojas Santana
 
-Mid-Level Developer specialized in Python, web technologies and artificial intelligence.
+**Mid-Level Developer** specialized in Python, web technologies and artificial intelligence.
+
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Site-00ff9d?style=for-the-badge)](https://janterinsight.github.io/professional-portfolio/)
+[![React 18](https://img.shields.io/badge/React-18-00ff9d?style=for-the-badge&logo=react)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-00ff9d?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
+[![Vite 6](https://img.shields.io/badge/Vite-6-00ff9d?style=for-the-badge&logo=vite)](https://vitejs.dev/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-00ff9d?style=for-the-badge)](LICENSE)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Deployed-00ff9d?style=for-the-badge)](https://janterinsight.github.io/professional-portfolio/)
+
+---
+
+## 👋 About Me
+
+I am a **Mid-Level Developer** passionate about programming and technology, with a solid foundation in exact sciences and a strong interest in digital innovation. My specialty is development in **Python** and web technologies, although I also explore areas such as artificial intelligence and machine learning, always seeking to expand my knowledge.
+
+I consider myself a responsible and results-oriented person, capable of adapting to new challenges and learning autonomously. My self-taught approach has allowed me to complement my academic training with personal projects, experimentation with modern frameworks, and the use of development methodologies that strengthen my professional profile.
+
+## 🌐 Live Demo
+
+Visit the published portfolio:  
+👉 **[https://janterinsight.github.io/professional-portfolio/](https://janterinsight.github.io/professional-portfolio/)**
+
+---
 
 ## 🚀 Technologies
 
-- **Frontend**: React 18, TypeScript, Vite 6
-- **Languages**: TypeScript, JavaScript, HTML/CSS, Python
-- **Frameworks and Tools**: Git/GitHub, VS Code, React
-- **Databases**: SQL (SQLite)
+| Category | Stack |
+|---|---|
+| **Frontend** | React 18, TypeScript, Vite 6 |
+| **Languages** | TypeScript, JavaScript, HTML/CSS, Python |
+| **Frameworks and Tools** | Git/GitHub, VS Code, React |
+| **Databases** | SQL (SQLite) |
+
+---
 
 ## 📁 Projects
 
-- **Pure Music Lovers Web** - Music community website (React)
-- **The Courtyard of Delights** - Artisanal ice cream shop landing page (React)
+| Project | Tech | Description | Link |
+|---|---|---|---|
+| **Pure Music Lovers Web** | React • Web | Official website for Puros Melómanos music community. Discover amazing musical events and connect with other music lovers. | [View Project](https://janterinsight.github.io/pure-music-lovers-web) |
+| **The Courtyard of Delights** | React • Web | Modern landing page for an artisanal ice cream shop. Features interactive gallery, smooth animations, and responsive design. | [View Project](https://janterinsight.github.io/the-courtyard-of-delights) |
+
+---
 
 ## 🗂️ Project structure
 
@@ -40,6 +70,8 @@ code/
     └── utils/            # Shared helpers
 ```
 
+---
+
 ## 🛠️ Development
 
 ```bash
@@ -60,6 +92,8 @@ npm run typecheck
 npm run build
 ```
 
+---
+
 ## 🌐 Deployment
 
 This project is configured for automatic deployment to **GitHub Pages** using GitHub Actions.
@@ -73,6 +107,15 @@ This project is configured for automatic deployment to **GitHub Pages** using Gi
 ### Manual deployment
 
 You can also manually trigger the deployment from the **Actions** tab in GitHub.
+
+---
+
+## 📬 Contact
+
+- **Email**: janterinsight@gmail.com
+- **GitHub**: [@JanterInsight](https://github.com/JanterInsight)
+
+---
 
 ## 📄 License
 
