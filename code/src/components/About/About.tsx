@@ -5,8 +5,8 @@ export default function About() {
   return (
     <section id="about" className="card reveal">
       <h2 className="card-title">About Me</h2>
-      <p>I am a junior developer passionate about programming and technology, with a solid foundation in exact sciences and a strong interest in digital innovation.
-      My specialty is development in <strong>Java</strong> and web technologies, although I also explore areas such as artificial intelligence and machine learning, always seeking to expand my knowledge.</p>
+      <p>I am a Mid-Level Developer passionate about programming and technology, with a solid foundation in exact sciences and a strong interest in digital innovation.
+      My specialty is development in <strong>Python</strong> and web technologies, although I also explore areas such as artificial intelligence and machine learning, always seeking to expand my knowledge.</p>
 
       <p>I consider myself a responsible and results-oriented person, capable of adapting to new challenges and learning autonomously.
       My self-taught approach has allowed me to complement my academic training with personal projects, experimentation with modern frameworks, and the use of development methodologies that strengthen my professional profile.</p>

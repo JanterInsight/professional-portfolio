@@ -1,20 +1,18 @@
 ﻿# Professional Portfolio - Janlier Rojas Santana
 
-Junior Developer specialized in Java, web technologies and artificial intelligence.
+Mid-Level Developer specialized in Python, web technologies and artificial intelligence.
 
 ## 🚀 Technologies
 
 - **Frontend**: React 18, TypeScript, Vite 6
-- **Languages**: Java, C++, TypeScript, HTML/CSS, Python
-- **Frameworks**: Swing, JavaFX, Maven, React
-- **Tools**: Git, GitHub, VS Code, IntelliJ
+- **Languages**: TypeScript, JavaScript, HTML/CSS, Python
+- **Frameworks and Tools**: Git/GitHub, VS Code, React
 - **Databases**: SQL (SQLite)
 
 ## 📁 Projects
 
 - **Pure Music Lovers Web** - Music community website (React)
 - **The Courtyard of Delights** - Artisanal ice cream shop landing page (React)
-- **NexusAI** - AI assistant for productivity (In development)
 
 ## 🗂️ Project structure
 

@@ -31,18 +31,10 @@ export const projects: Project[] = [
     link: 'https://janterinsight.github.io/the-courtyard-of-delights'
   },
   {
-    title: 'NexusAI',
-    tech: 'Java • Web • AI',
-    description:
-      'AI assistant for productivity and task management. Modern landing page with animations and responsive design.',
-    emoji: '🤖',
-    disabled: true
-  },
-  {
     title: 'Coming Soon',
     tech: 'In development',
     description: 'New projects under construction. Stay tuned!',
-    emoji: '🚀',
+    icon: 'clock.svg',
     disabled: true
   }
 ]

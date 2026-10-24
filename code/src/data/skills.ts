@@ -15,8 +15,7 @@ export const skillCategories: SkillCategory[] = [
   {
     title: 'Languages',
     skills: [
-      { name: 'Java', level: '85%' },
-      { name: 'C++', level: '75%' },
+      { name: 'TypeScript', level: '80%' },
       { name: 'JavaScript', level: '70%' },
       { name: 'HTML/CSS', level: '80%' },
       { name: 'Python', level: '65%' }
@@ -25,10 +24,8 @@ export const skillCategories: SkillCategory[] = [
   {
     title: 'Frameworks and Tools',
     skills: [
-      { name: 'Swing/JavaFX', level: '80%' },
-      { name: 'Maven', level: '70%' },
       { name: 'Git/GitHub', level: '75%' },
-      { name: 'VS Code/IntelliJ', level: '85%' },
+      { name: 'VS Code', level: '85%' },
       { name: 'React', level: '75%' }
     ]
   },

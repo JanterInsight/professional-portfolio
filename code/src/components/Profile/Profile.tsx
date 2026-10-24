@@ -12,12 +12,12 @@ export default function Profile() {
   return (
     <div className="profile">
       <div className="profile-glow"></div>
-      <img src={imageUrl('Smoking.png')} alt="Profile picture of Janlier Rojas" className="profile-img" />
+      <img src={imageUrl('profile.webp')} alt="Profile picture of Janlier Rojas" className="profile-img" />
       <div className="profile-info">
         <h1 className="profile-title" ref={titleRef}>Janlier Rojas Santana</h1>
-        <p className="profile-subtitle">Junior Developer • Java & Web • AI Enthusiast</p>
+        <p className="profile-subtitle">Mid-Level Developer • Python & Web • AI Enthusiast</p>
         <div className="profile-tags">
-          <span className="tag">Java</span>
+          <span className="tag">Python</span>
           <span className="tag">Web</span>
           <span className="tag">AI</span>
         </div>
